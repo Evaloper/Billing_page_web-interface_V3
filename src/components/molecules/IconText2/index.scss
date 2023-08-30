@@ -1,0 +1,26 @@
+.text-icon {
+  fill: #fff;
+  background-color: #6681e8;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.txt-icon-para_date {
+  .txt-icon-para {
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+
+  .txt-icon-date {
+    color: #82878c;
+    font-weight: 300;
+  }
+}

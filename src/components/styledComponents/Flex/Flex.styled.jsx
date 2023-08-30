@@ -1,11 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
+export const Flex = styled.div`
+  display: flex;
+`;
+
 export const FlexCenter = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
 `;
+
+
 
 export const SpaceBetween = styled.div`
   justify-content: space-between;

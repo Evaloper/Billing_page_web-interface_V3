@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Logo, Icon } from "../../atoms";
 import { Link } from "react-router-dom";
 import "./index.css";
+import { FlexCenterSpaceBetween } from "../../styledComponents/Flex/flex.styled";
 
 export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -13,21 +14,21 @@ export const Header = () => {
   return (
     <div className="header pb-15">
       <div className="desktop-view">
-        <div className="top-header flex space-between align-centered">
-          <div className="logo flex space-between align-centered">
+        <FlexCenterSpaceBetween className="top-header">
+          <FlexCenterSpaceBetween className="logo">
             <Logo />
             <div className="header-searchbar">
               <Icon name="search" className="search-icon" />
             </div>
             <input type="text" placeholder="Search" className="inp-header" />
-          </div>
-          <div className="profile-section-header flex space-between align-centered">
+          </FlexCenterSpaceBetween>
+          <FlexCenterSpaceBetween className="profile-section-header">
             <Icon name="notification" className="header-icon" />
             <span className="number-of-notification"></span>
             <div className="settings-header">
               <Icon name="settings" className="header-icon" />
             </div>
-            <div className="flex space-between align-centered">
+            <FlexCenterSpaceBetween>
               <div className="flex mr-10">
                 <img
                   className="profile-img"
@@ -77,9 +78,9 @@ export const Header = () => {
                   </div>
                 )}
               </div>
-            </div>
-          </div>
-        </div>
+            </FlexCenterSpaceBetween>
+          </FlexCenterSpaceBetween>
+        </FlexCenterSpaceBetween>
         <nav className="mt-20 mr-50 nav-section">
           <Link to={"/"} className="nav mr-20">
             Home
